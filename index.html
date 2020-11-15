@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Сказка про айтигеника</h1>
+
+    <button onclick="prev()">Хочу назад...</button>
+    <img id="slide" src="1.png" width=300px height=200px/>
+    <button onclick="next()">Дальше сказку</button>
+    
+    <script>
+        
+        var images=[
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png"
+        ];
+        var num=0;
+        
+        setInterval(function(){
+            for (var i = 0; i <= images.length; i++) {
+                next();
+            }   
+             
+       }, 7000);  
+        
+        
+        
+        
+        
+        function next(){
+            
+            var slide=document.getElementById("slide");
+            num++;
+            console.log(num+'  '+images.length);
+            if(num>=images.length){
+                console.log('123   '+num);
+                num=0;
+            }
+            slide.src=images[num];
+        }
+        
+        function prev(){
+            var slide=document.getElementById("slide");
+            num--;
+            if (num<0){
+                num=images.length-1;
+            }
+            slide.src=images[num];
+        }
+    </script>
+</body>
+
+</html>

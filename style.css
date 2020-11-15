@@ -1,0 +1,53 @@
+body{
+   margin: 0 auto;
+    text-align: center
+}
+.col{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+    display: flex;
+   
+    -webkit-flex-direction: column;
+       
+        -ms-flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+               -moz-box-orient: vertical;
+               -moz-box-direction: normal;
+            flex-direction: column
+}
+.row{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -moz-box;
+    display: flex;
+    
+    -webkit-flex-direction: row;
+       
+        -ms-flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+               -moz-box-orient: horizontal;
+               -moz-box-direction: normal;
+            flex-direction: row
+}
+header{
+    background:red
+    
+}
+section{
+    background: blue
+}
+footer{
+    background: green
+}
+aside{
+    width: 60%;
+    background: yellow
+}
+article{
+    width: 40%
+}
